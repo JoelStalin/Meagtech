@@ -165,7 +165,7 @@
   "scripts": {
     "build": "gulp build",
     "build:server": "babel server -d dist/server --ignore spec.js,test.js,integration.js,local.env --source-maps",
-    "postinstall": "gulp copy:fonts:dev",
+
     "lint": "npm run lint:client && npm run lint:server",
     "lint:client": "eslint ./client/**/*.js -c ./client/.eslintrc --ignore-pattern *.spec.js",
     "lint:server": "eslint ./server/**/*.js -c ./server/.eslintrc --ignore-pattern *.spec.js --ignore-pattern *.integration.js",
@@ -177,7 +177,8 @@
     "update-webdriver": "node node_modules/protractor/bin/webdriver-manager update",
     "start": "node server",
     "start:client": "webpack-dev-server --config webpack.dev.js",
-    "start:server": "nodemon --watch server server"
+    "start:server": "nodemon --watch server server",
+    "clean": "rm -rf build && mkdir build"
   },
   "sideEffects": [
     "*.css",
