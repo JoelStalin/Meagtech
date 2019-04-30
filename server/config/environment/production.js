@@ -19,6 +19,6 @@ module.exports = {
         uri: process.env.MONGODB_URI
             || process.env.MONGOHQ_URL
             || process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_APP_NAME
-            || 'mongodb://localhost/meagtech'
+            || 'mongodb://Admin:Admin1234@ds161400.mlab.com:61400/heroku_20t778v4'
     }
 };
