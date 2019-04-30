@@ -56,6 +56,7 @@
     "@auth0/angular-jwt": "^2.0.0",
     "@babel/core": "^7.4.4",
     "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/register": "^7.4.4",
     "angular-validation-match": "^1.9.0",
@@ -165,7 +166,7 @@
   "scripts": {
     "build": "gulp build",
     "build:server": "babel server -d dist/server --ignore spec.js,test.js,integration.js,local.env --source-maps",
-
+    "postinstall": "gulp copy:fonts:dev",
     "lint": "npm run lint:client && npm run lint:server",
     "lint:client": "eslint ./client/**/*.js -c ./client/.eslintrc --ignore-pattern *.spec.js",
     "lint:server": "eslint ./server/**/*.js -c ./server/.eslintrc --ignore-pattern *.spec.js --ignore-pattern *.integration.js",
@@ -177,8 +178,7 @@
     "update-webdriver": "node node_modules/protractor/bin/webdriver-manager update",
     "start": "node server",
     "start:client": "webpack-dev-server --config webpack.dev.js",
-    "start:server": "nodemon --watch server server",
-    "clean": "rm -rf build && mkdir build"
+    "start:server": "nodemon --watch server server"
   },
   "sideEffects": [
     "*.css",
