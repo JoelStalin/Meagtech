@@ -1,0 +1,3 @@
+C:\meagtech\obj\Debug\MeagTech.njsprojAssemblyReference.cache
+C:\meagtech\obj\Debug\MeagTech.njsproj.CoreCompileInputs.cache
+C:\meagtech\bin\Microsoft.NodejsTools.WebRole.dll
