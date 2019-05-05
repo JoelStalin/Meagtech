@@ -3139,17 +3139,17 @@
 
 /* Banner */
 
-	#banner {
-		background-attachment: scroll,							fixed;
-		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: top left,						center center;
-		background-repeat: repeat,							no-repeat;
-		background-size: auto,							cover;
-		color: #fff;
-		padding: 12em 0 20em 0;
-		text-align: center;
-	}
+#banner {
+    background-attachment: scroll, fixed;
+    background-color: #666;
+    background-image: url("images/overlay.png"), url("../../images/819.jpg");
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    color: #fff;
+    padding: 12em 0 20em 0;
+    text-align: center;
+}
 
 		#banner :last-child {
 			margin-bottom: 0;
@@ -3869,6 +3869,9 @@
 			#cta {
 				padding: 2.5em 1em 3em 1em;
 			}
+            #camp  ul  li{
+                list-style : none;
+            }
 
 	}
 .map-container-5 {
@@ -3885,3 +3888,4 @@
         width: 100%;
         position: absolute;
     }
+
