@@ -8,12 +8,11 @@ block content
 block  Srv_in 
     -   var couter = ''
     -  var servers= {'TV': ['LCD Television', 'LED-LCD Televisions', 'Plasma Televisions', 'DLP Televisions'], 'Audio': ['Blu - ray Disc Players', 'Amplifiers', 'Equalizers', 'Audio Receivers', 'Turntables', 'Car Amplifiers', 'Car Stereos'], 'Appliances': [], 'Microwaves': [] , 'Speakers': [] , 'Computers': []}
-       
+    div.features-row
        each val, index in  servers
-          h3(position='center')=index
-           
-          ol(style='list-style :none; text-decoration: none;')
-          ul(style='list-style :none; text-decoration: none;')
+         section 
+           h3(position='center')=index
+           ul(style='list-style :none; text-decoration: none;')
            img(src='images/'+ index + '.jpg' alt='' height=' 300.5em' width=' 300.5em '   ).icon.major.fa-area-chart.accent3
            
            each val2 , index2 in val

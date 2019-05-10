@@ -3234,10 +3234,10 @@
     background-image: url("images/pic01.jpg"), url("../../images/pic01.jpg");
     background-position: top left, center center;
     background-repeat: repeat, no-repeat;
-    background-size: 400px,cover;
-    color: #fff;
-    font-size:25px;
-  
+    background-size: auto,cover;
+    color: #f3f8f8;
+    font-family: 'Gugi', cursive;
+    font-size: 30px;
     padding: 12em 0 20em 0;
     text-align: center;
 }
