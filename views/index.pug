@@ -20,3 +20,81 @@ block  Srv_in
             li(style='list-style :none; text-decoration: none;')
              a(href='#'  style='list-style :none; text-decoration: none;')=val2
             
+
+
+block  pie 
+  
+  section.contact-section.my-5
+    // Form with header
+    .card
+      // Grid row
+      .row
+        // Grid column
+        .col-lg-8
+          .card-body.form
+            // Header
+            h3.mt-4
+              
+              | Write to us:
+            // Grid row
+            .row
+              // Grid column
+              .col-md-6
+                .md-form.mb-0
+                  input#form-contact-name.form-control(type='text')
+                  label(for='form-contact-name') Your name
+              // Grid column
+              // Grid column
+              .col-md-6
+                .md-form.mb-0
+                  input#form-contact-email.form-control(type='text')
+                  label(for='form-contact-email') Your email
+              // Grid column
+            // Grid row
+            // Grid row
+            .row
+              // Grid column
+              .col-md-6
+                .md-form.mb-0
+                  input#form-contact-phone.form-control(type='text')
+                  label(for='form-contact-phone') Your phone
+              // Grid column
+              // Grid column
+              .col-md-6
+                .md-form.mb-0
+                  input#form-contact-company.form-control(type='text')
+                  label(for='form-contact-company') Your company
+              // Grid column
+            // Grid row
+              // Grid row
+            .row
+              // Grid column
+              .col-md-12
+                .md-form.mb-0
+                  textarea#form-contact-message.form-control.md-textarea(rows='3')
+                  label(for='form-contact-message') Your message
+                  input.fit(type='submit' value='Send')
+                   
+              
+        .col-lg-4
+          .card-body.contact.text-center.h-100.white-text
+            h3.my-4.pb-2 Contact information
+            ul.text-lg-left.list-unstyled.ml-4
+              li
+                p
+                  i.fas.fa-map-marker-alt.pr-2
+                  | ALLENTOWN PA 18102  USA
+              li
+                p
+                  
+                  | + 844-711-TECH (8324)
+              li
+                p              
+                  | info@meagtechnologies.net
+            hr.hr-light.my-4
+            .col-lg-7
+                // Google map
+            #map-container-section.z-depth-1-half.map-container-section.mb-4(style='height: 400px')
+               iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.02002713087!2d-75.48035488537185!3d40.60738177934338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c43974f8c3030b%3A0x958a15d89a88cd43!2sAllentown%2C+PA+18102%2C+USA!5e0!3m2!1sen!2sdo!4v1556730285798!5m2!1sen!2sdo' frameborder='0' style='border:0' allowfullscreen='')
+                // Buttons
+            .row.text-center

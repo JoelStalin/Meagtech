@@ -3206,6 +3206,7 @@
 /* Main */
 
 	#main {
+
 		padding: 4em 0;
 	}
 
@@ -3227,7 +3228,19 @@
 				margin: 1em 0 0 0;
 				padding: 1em 0 1.25em 0;
 			}
-
+.about {
+    background-attachment: scroll, fixed;
+    background-color: #666;
+    background-image: url("images/pic01.jpg"), url("../../images/pic01.jpg");
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: 400px,cover;
+    color: #fff;
+    font-size:25px;
+  
+    padding: 12em 0 20em 0;
+    text-align: center;
+}
 	body.landing #main {
 		margin-top: -14em;
 	}
